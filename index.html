@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+
+
+   <link href='https://fonts.googleapis.com/css2?family=Jost:wght@300;400;600&amp;display=swap' rel='stylesheet'/>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
+   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+   <link href="https://ferrishallahuddin.files.wordpress.com/2022/11/cropped-foto.jpg?w=32" rel="icon">
+
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" /> -->
+ 
+
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+   <link href="kumpulanstyle.css" rel="stylesheet">
+
+
+
+<script src="gh/es6-promise.js"></script>
+<script src="gh/jspdf.umd.min.js"></script>
+<script src="gh/html2canvas.min.js"></script>
+<script src="gh/html2pdf.bundle.min.js"></script>
+
+   
+<head>
+
+<title>Frshackrs</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	
+<style type="text/css">
+/* body { background-image: url(https://bootstrapious.com/i/snippets/sn-static-header/background.jpg); height: 100%; background-position: center; background-repeat: no-repeat; background-size: cover; background-attachment: fixed;}  
+} */
+
+body {
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+.page-holder {
+  min-height: 100vh;
+}
+
+.bg-cover {
+  background-size: cover !important;
+}
+
+.child {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.container20{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom {
+    width: 15rem !important;
+}
+
+
+
+.flex-container {
+margin-top: 1.5vw;
+margin-bottom: 1.5vw; 
+border: 0px solid black;
+width: auto;
+display: flex;
+justify-content: center;
+ align-items: center;
+ 
+}
+
+th, td {
+  padding: 3px;
+}
+
+.flex-items:nth-child(1) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.flex-items:nth-child(2) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+   .my-image{
+            width: -webkit-fill-available;
+            padding-top: 10px;
+            padding-left: 6px;
+            padding-right: 6px;
+			vertical-align:middle;
+        }
+
+.column2 {
+  float: left;
+  padding: 0.5vw;
+  width:auto;
+  height: auto;
+  margin-left:2vw;
+  margin-top:1.3vw;
+  margin-bottom:1.3vw;
+}
+
+
+   .container26 {
+            position: fixed;
+            top: 20%;
+            left: 28%;
+            margin-top: -65px;
+            margin-left: -100px;
+            border-radius: 7px;
+        }
+  
+        .card20 {
+            box-sizing: content-box;
+            width: 700px;
+            height: 710px;
+            padding: 30px;
+            border: 0px;
+            font-style: sans-serif;
+            background-color: #fff;
+			
+        }
+  
+  
+        .fertu {
+		    font-family: sans-serif;
+            text-align: left;
+            color: #000;
+        }
+		
+		.dfdf{
+		border: 1px solid black;
+		}
+
+</style>
+
+
+
+<script>
+function exportToPDF() {
+ var element = document.getElementById('makepdf');
+ var makePDF = document.querySelector("#makepdf");
+var opt = {
+ margin: 1,
+ filename: 'Lamaran Kerja.pdf',
+ image: {type: 'jpg', quality: 0.99},
+ html2canvas: {dpi: 192, letterRendering: true, useCORS: true}, 
+ jsPDF: { unit: 'pt', format: 'a4', orientation: 'portrait' }
+ };
+html2pdf().from(makePDF).set(opt).save();
+}
+</script>
+
+</head>
+<body class="gambarlosi">
+
+
+
+
+<header id="site-header" class="fixed-top">
+  <div class="container">
+      <nav class="navbar navbar-expand-lg stroke">
+          <a class="navbar-brand">
+             <h1 class="m-0 display-5"><span class="text-primary">Port</span>folio</h1>
+          </a>
+		  
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              
+          </div>
+		  
+          <div class="mobile-position">
+              <nav class="navigation">
+                  <div class="theme-switch-wrapper">
+                      <label class="theme-switch" for="checkbox">
+                          <input type="checkbox" id="checkbox">
+                          <div class="mode-container">
+                              <i class="gg-sun"></i>
+                              <i class="gg-moon"></i>
+                          </div>
+                      </label>
+                  </div>
+              </nav>
+          </div>
+      </nav>
+  </div>
+</header> 
+
+
+  
+
+  <div class='container-fluid d-flex align-items-center mb-5 py-5 child'>
+	<div class="container" >
+        <div class="row align-items-center">
+			<div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
+                   <img class="img-fluid w-100 shadow-sm" src="photoBESAR2.png" >
+                </div>
+            <div class="col-lg-7 text-center text-lg-left boxkotak">
+            <h1 style="text-align:center"><span class="ukuransebutan">Hai, nama saya</span></h1>
+			<h2 style="text-align:center"><span class="typed-text ukurannama"></span><span class="cursor">&nbsp;</span></h2>
+			
+                <p class="ukuranptea" ><strong>Saya lulusan SMK jurusan rekayasa perangkat lunak. Saya memiliki keahlian dalam bidang komputer baik software maupun hardware. Selain itu, saya memiliki sedikit keahlian dalam pemrograman web.</strong></p>
+                
+				<table class="flex-container ">
+				<tr>
+                   <td><a class="btn btn-primary custom" href="#">Unduh CV</a></td>
+				</tr>
+				<tr>
+                  <td><a class="btn btn-success custom" onclick="exportToPDF();" >Unduh surat lamaran kerja</a></td>
+				   </tr>
+				   <tr>
+                   <td><a class="btn btn-primary custom" href="#">Kirim pesan WhatsApp</a></td>
+				   </tr>
+                 </table>				   
+                
+            </div>
+			
+        </div>
+    </div>
+</div> 
+
+<!------------------------------------------------------------------------------->
+
+ <div style="display: none;" class="container26">
+        <div class="card20" id="makepdf">
+          <p class="fertu" style="text-align: right;">Tegal, <span id="tanggalwaktu"></span></p>
+            <p class="fertu">Perihal : Lamaran Pekerjaan</p><br>
+			<p class="fertu">Yth.</p>
+			<p  class="fertu">Bapak/Ibu Pimpinan Perusahaan</p>
+			<p class="fertu">di tempat</p><br>
+			<p class="fertu">Dengan hormat,</p>
+			<p  class="fertu" style="text-indent:35px;">Berdasarkan informasi yang saya dapatkan dari website. Saya bermaksud mengajukan lamaran untuk bekerja di perusahaan yang Bapak/Ibu pimpin, adapun data saya sebagai berikut,</p>
+            <ul>
+                    <p  class="fertu">Nama&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Ferri Shallahuddin<br>Tempat & Tgl. Lahir : Pemalang, 17 Februari 1997<br>Pendidikan Akhir&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: SMK AL-IRSYAD Tegal<br>Alamat&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Jl. Cendrawasih Gg 1 no 17 Kota Tegal<br>No. Hp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 0851-5651-5473<br>Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: frshackrs@gmail.com</p>
+            </ul>
+			<p  class="fertu">Besar harapan saya untuk diberikan kesempatan untuk mengikuti wawancara lanjutan dan bergabung dengan perusahaan Bapak/Ibu. Atas perhatian dan kesempatan yang telah diberikan, saya ucapkan terima kasih.</p><br>
+			<p  class="fertu">Hormat saya,</p>
+			<img src="https://myfiles.space/user_files/138496_a250c2e7af836a14/138496_custom_files/img1670215545.jpeg" width="105" >
+			<p  class="fertu">Ferri Shalahuddin</p>
+        </div>
+    </div>
+	
+<!------------------------------------------------------------------------------->
+
+<script src="theme-change.js"></script>
+
+<script>
+var tw = new Date();
+if (tw.getTimezoneOffset() == 0) (a=tw.getTime() + ( 7 *60*60*1000))
+else (a=tw.getTime());
+tw.setTime(a);
+var tahun= tw.getFullYear ();
+var hari= tw.getDay ();
+var bulan= tw.getMonth ();
+var tanggal= tw.getDate ();
+var hariarray=new Array("Minggu,","Senin,","Selasa,","Rabu,","Kamis,","Jum'at,","Sabtu,");
+var bulanarray=new Array("Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","Nopember","Desember");
+document.getElementById("tanggalwaktu").innerHTML = tanggal+" "+bulanarray[bulan]+" "+tahun;
+</script>
+
+<script>
+  const typedTextSpan = document.querySelector(".typed-text");
+  const cursorSpan = document.querySelector(".cursor");
+
+  const textArray = ["Ferri Shallahuddin"];
+  const typingDelay = 200;
+  const erasingDelay = 10;
+  const newTextDelay = 100; // Delay between current and next text
+  let textArrayIndex = 0;
+  let charIndex = 0;
+
+  function type() {
+    if (charIndex < textArray[textArrayIndex].length) {
+      if (!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+      typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+      charIndex++;
+      setTimeout(type, typingDelay);
+    } else {
+      cursorSpan.classList.remove("typing");
+      setTimeout(erase, newTextDelay);
+    }
+  }
+
+  function erase() {
+    if (charIndex > 0) {
+      // add class 'typing' if there's none
+      if (!cursorSpan.classList.contains("typing")) {
+        cursorSpan.classList.add("typing");
+      }
+      typedTextSpan.textContent = textArray[textArrayIndex].substring(0, 0);
+      charIndex--;
+      setTimeout(erase, erasingDelay);
+    } else {
+      cursorSpan.classList.remove("typing");
+      textArrayIndex++;
+      if (textArrayIndex >= textArray.length) textArrayIndex = 0;
+      setTimeout(type, typingDelay);
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", function () { // On DOM Load initiate the effect
+    if (textArray.length) setTimeout(type, newTextDelay + 250);
+  });
+</script>
+
+
+</body>
+</html>
+
+
