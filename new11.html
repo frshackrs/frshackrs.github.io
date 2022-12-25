@@ -187,6 +187,13 @@ th, td {
 <script>
 
 document.cookie = "letsChat= 1;"
+	
+if (localStorage.getItem('theme') == "dark"){
+document.cookie = "darkthem= 1;"
+} else {
+document.cookie = "darkthem= 0;"
+}
+
 
 window.smoothScroll = function(target) {
     var scrollContainer = target;
