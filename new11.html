@@ -189,10 +189,8 @@ th, td {
 document.cookie = "letsChat= 1;"
 	
 if (localStorage.getItem('theme') == "dark"){
-document.cookie = "darkthem= 1;"
-} 
-
-if (localStorage.getItem('theme') == "light"){
+document.cookie = "darkthem=1; expires=Thu, 18 Dec 2100 12:00:00 UTC; path=/";
+} else {
 document.cookie = "darkthem=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 } 
 	
