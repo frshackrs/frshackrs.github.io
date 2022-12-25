@@ -190,9 +190,12 @@ document.cookie = "letsChat= 1;"
 	
 if (localStorage.getItem('theme') == "dark"){
 document.cookie = "darkthem= 1;"
-} else {
-document.cookie = 'darkthem' + '=;expires=Thu, 01 Jan 1970 00:00:01 GMT;';
-}
+} 
+
+if (localStorage.getItem('theme') == "light"){
+document.cookie = 'darkthem=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+} 
+	
 
 
 window.smoothScroll = function(target) {
