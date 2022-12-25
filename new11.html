@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+
+
+   <link href='https://fonts.googleapis.com/css2?family=Jost:wght@300;400;600&amp;display=swap' rel='stylesheet'/>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
+   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+   <link href="https://ferrishallahuddin.files.wordpress.com/2022/11/cropped-foto.jpg?w=32" rel="icon">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" /> -->
+ 
+
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+   <link rel="stylesheet" href="https://frshackrs.github.io/kumpulanstyle.css">
+   <link rel="stylesheet" href="https://frshackrs.github.io/animatedbtn.css">
+   
+
+   <!-- <link href="font-awesome.min.css" rel="stylesheet"> -->
+
+
+<script src="gh/es6-promise.js"></script>
+<script src="gh/jspdf.umd.min.js"></script>
+<script src="gh/html2canvas.min.js"></script>
+<script src="gh/html2pdf.bundle.min.js"></script>
+
+   
+<head>
+
+<title>Frshackrs</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	
+<style type="text/css">
+/* body { background-image: url(https://bootstrapious.com/i/snippets/sn-static-header/background.jpg); height: 100%; background-position: center; background-repeat: no-repeat; background-size: cover; background-attachment: fixed;}  
+} */
+
+body {
+ /* overflow-y: hidden; 
+  overflow-x: hidden;  */ 
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+   margin: 0; 
+}
+
+.first {
+    width: 100%;
+    height: 1000px;
+   
+}
+
+.second {
+   width: 100%;
+   height: 1000px;
+   background: #999;
+   position: absolute;
+   margin-top: 1000px;
+   margin-right: 0;
+}
+
+
+
+
+
+.page-holder {
+  min-height: 100vh;
+}
+
+.bg-cover {
+  background-size: cover !important;
+}
+
+.child {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.container20{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom {
+    width: 15rem !important;
+}
+
+
+
+.flex-container {
+margin-top: 1.5vw;
+margin-bottom: 1.5vw; 
+border: 0px solid black;
+width: auto;
+display: flex;
+justify-content: center;
+ align-items: center;
+ 
+}
+
+th, td {
+  padding: 3px;
+}
+
+.flex-items:nth-child(1) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.flex-items:nth-child(2) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+   .my-image{
+            width: -webkit-fill-available;
+            padding-top: 10px;
+            padding-left: 6px;
+            padding-right: 6px;
+			vertical-align:middle;
+        }
+
+.column2 {
+  float: left;
+  padding: 0.5vw;
+  width:auto;
+  height: auto;
+  margin-left:2vw;
+  margin-top:1.3vw;
+  margin-bottom:1.3vw;
+}
+
+
+   .container26 {
+            position: fixed;
+            top: 20%;
+            left: 28%;
+            margin-top: -65px;
+            margin-left: -100px;
+            border-radius: 7px;
+        }
+  
+        .card20 {
+            box-sizing: content-box;
+            width: 700px;
+            height: 710px;
+            padding: 30px;
+            border: 0px;
+            font-style: sans-serif;
+            background-color: #fff;
+			
+        }
+  
+  
+        .fertu {
+		    font-family: sans-serif;
+            text-align: left;
+            color: #000;
+        }
+		
+		
+		
+		.yuktengah{
+		width: auto; 
+		margin-left: auto; 
+		margin-right: auto
+		}
+		
+		
+
+</style>
+
+
+
+<script>
+
+document.cookie = "letsChat= 1;"
+
+window.smoothScroll = function(target) {
+    var scrollContainer = target;
+    do { //find scroll container
+        scrollContainer = scrollContainer.parentNode;
+        if (!scrollContainer) return;
+        scrollContainer.scrollTop += 1;
+    } while (scrollContainer.scrollTop == 0);
+    
+    var targetY = 0;
+    do { //find the top of target relatively to the container
+        if (target == scrollContainer) break;
+        targetY += target.offsetTop;
+    } while (target = target.offsetParent);
+    
+    scroll = function(c, a, b, i) {
+        i++; if (i > 30) return;
+        c.scrollTop = a + (b - a) / 30 * i;
+        setTimeout(function(){ scroll(c, a, b, i); }, 20);
+    }
+    // start scrolling
+    scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+}
+
+function menduwur() {
+var elmntToView = document.getElementById("first");
+elmntToView.scrollIntoView(); 
+}
+
+function mengisor() {
+var elmntToView = document.getElementById("second");
+elmntToView.scrollIntoView(); 
+}
+
+function exportToPDF() {
+ var element = document.getElementById('makepdf');
+ var makePDF = document.querySelector("#makepdf");
+var opt = {
+ margin: 1,
+ filename: 'Lamaran Kerja.pdf',
+ image: {type: 'jpg', quality: 0.99},
+ html2canvas: {dpi: 192, letterRendering: true, useCORS: true}, 
+ jsPDF: { unit: 'pt', format: 'a4', orientation: 'portrait' }
+ };
+html2pdf().from(makePDF).set(opt).save();
+}
+
+function houl(){
+document.getElementById('loko').style.display = "none";
+document.getElementById('loki').style.display = "block";
+}
+function houl2(){
+document.getElementById('loko').style.display = "block";
+document.getElementById('loki').style.display = "none";
+}
+
+function yrrt() {
+
+ /*document.getElementById("myFrame").contentWindow.document.getElementById("holop").click;
+ 
+var iframe = document.getElementById("myFrame");
+var elmnt = iframe.contentWindow.document.getElementsByTagName("TABLE")[0];
+elmnt.style.display = "none"; */
+ 
+ document.getElementById('myFrame').contentWindow.document.getElementById('mejak').style.display = "none";
+ 
+}
+
+</script>
+
+</head>
+<body class="gambarlosi">
+
+
+
+
+<header id="site-header" class="fixed-top">
+  <div class="container">
+      <nav class="navbar navbar-expand-lg stroke">
+          <a class="navbar-brand">
+             <h1 class="m-0 display-5"><span class="text-primary">Port</span>folio</h1>
+          </a>
+		  
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              
+          </div>
+		  
+          <div class="mobile-position">
+              <nav class="navigation">
+                  <div class="theme-switch-wrapper">
+                      <label class="theme-switch" for="checkbox">
+                          <input type="checkbox" id="checkbox">
+                          <div class="mode-container">
+                              <i class="gg-sun"></i>
+                              <i class="gg-moon"></i>
+                          </div>
+                      </label>
+                  </div>
+              </nav>
+          </div>
+      </nav>
+  </div>
+</header> 
+
+
+  
+
+  <div id="first" class='container-fluid d-flex align-items-center mb-5 py-5 child first'>
+	<div class="container" >
+        <div class="row align-items-center">
+			<div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
+                   <img class="img-fluid w-100 shadow-sm tutuu">
+                </div>
+				
+            <div  id="loko" style="display:block;" class="col-lg-7 text-center text-lg-left boxkotak">
+            <h1 style="text-align:center"><span class="ukuransebutan">Hai, nama saya</span></h1>
+			<h2 style="text-align:center"><span class="typed-text ukurannama"></span><span class="cursor">&nbsp;</span></h2>
+			
+                <p class="ukuranptea" ><strong>Saya lulusan SMK jurusan rekayasa perangkat lunak. Sebelumnya saya pernah bekerja di perusahaan logistik sebagai admin operasional. Saya mampu bekerja dengan tim maupun individu, dan saya memiliki ketrampilan dalam bidang komputer baik software maupun hardware.</strong></p>
+                
+				 <table class="flex-container ">
+				<tr> 
+                   <!--<th><a class="fa fa-2x fa-angle-down text-white scroll-to-bottom" style="margin-top: 30px;" ></a></th>-->
+				   <td><a  class="pulsing" href="#" onclick="houl();">Lihat selengkapnya...</a></td>
+				</tr>
+                 </table>	
+            </div>
+			
+			<!-- text-center text-lg-left-->
+			<div id="loki" style="display:none;" class="col-lg-7 yuktengah boxkotak">
+				<a class="fa fa-times dfdf" href="#" onclick="houl2();"></a>
+              
+				<iframe id="myFrame" class="flex-container yuktengah" src="https://ferri-shallahuddin.000webhostapp.com/login.php" style="border:none; width:auto; height:195px;" allowtransparency="true" scrolling="no" frameborder="0"></iframe>	
+
+<button onclick="yrrt()">Try it</button>				
+                
+            </div>
+			
+			
+			
+        </div>
+		
+	
+		
+    </div>
+</div> 
+
+
+
+<!--
+<div class="second container-fluid d-flex align-items-center mb-5 py-5 child" id="second">
+<div class="container" >
+        <div class="row align-items-center">
+			
+          
+            <button type="button" style="margin-top:300px;" onclick="menduwur();">Click Me!</button>
+		
+			
+        </div>
+    </div>
+</div> -->
+
+<!------------------------------------------------------------------------------->
+
+ <div style="display: none;" class="container26">
+        <div class="card20" id="makepdf">
+          <p class="fertu" style="text-align: right;">Tegal, <span id="tanggalwaktu"></span></p>
+            <p class="fertu">Perihal : Lamaran Pekerjaan</p><br>
+			<p class="fertu">Yth.</p>
+			<p  class="fertu">Bapak/Ibu Pimpinan Perusahaan</p>
+			<p class="fertu">di tempat</p><br>
+			<p class="fertu">Dengan hormat,</p>
+			<p  class="fertu" style="text-indent:35px;">Berdasarkan informasi yang saya dapatkan dari website. Saya bermaksud mengajukan lamaran untuk bekerja di perusahaan yang Bapak/Ibu pimpin, adapun data saya sebagai berikut,</p>
+            <ul>
+                    <p  class="fertu">Nama&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Ferri Shallahuddin<br>Tempat & Tgl. Lahir : Pemalang, 17 Februari 1997<br>Pendidikan Akhir&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: SMK AL-IRSYAD Tegal<br>Alamat&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Jl. Cendrawasih Gg 1 no 17 Kota Tegal<br>No. Hp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 0851-5651-5473<br>Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: frshackrs@gmail.com</p>
+            </ul>
+			<p  class="fertu">Besar harapan saya untuk diberikan kesempatan untuk mengikuti wawancara lanjutan dan bergabung dengan perusahaan Bapak/Ibu. Atas perhatian dan kesempatan yang telah diberikan, saya ucapkan terima kasih.</p><br>
+			<p  class="fertu">Hormat saya,</p>
+			<img src="data:image/svg+xml,%3Csvg version='1.1' id='svg2' width='105' height='56' viewBox='0 0 105 56' sodipodi:docname='img1670215545.svg' inkscape:version='1.2.2 (732a01da63, 2022-12-09)' xmlns:inkscape='http://www.inkscape.org/namespaces/inkscape' xmlns:sodipodi='http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns='http://www.w3.org/2000/svg' xmlns:svg='http://www.w3.org/2000/svg'%3E%3Cdefs id='defs6' /%3E%3Csodipodi:namedview id='namedview4' pagecolor='%23ffffff' bordercolor='%23000000' borderopacity='0.25' inkscape:showpageshadow='2' inkscape:pageopacity='0.0' inkscape:pagecheckerboard='0' inkscape:deskcolor='%23d1d1d1' showgrid='false' inkscape:zoom='11.52381' inkscape:cx='52.5' inkscape:cy='28.028926' inkscape:window-width='1920' inkscape:window-height='1017' inkscape:window-x='-8' inkscape:window-y='-8' inkscape:window-maximized='1' inkscape:current-layer='g8' /%3E%3Cg inkscape:groupmode='layer' inkscape:label='Image' id='g8'%3E%3Cimage width='105' height='56' preserveAspectRatio='none' xlink:href='data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsK%0ACwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQU%0AFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCAA4AGkDASIA%0AAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA%0AAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3%0AODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm%0Ap6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA%0AAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx%0ABhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK%0AU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3%0AuLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD9U6KK%0AKAKGua9pnhjSrjU9Y1G00nTbdd015fTrDDEM4yzsQAM+prlvCvx0+G3jrUFsPDfxB8K+Ib5jgWul%0Aa1bXMpP+6jk15N+0t4f0zxt8fP2efDfiOzh1bwzd6pq9zPpd4oktri6g095LcyIflfb+8YA5GRXo%0AHjL9lv4Q+PtMNhrnw38N3UPVZIdOjt5oz6pLGFdD7qwNAHqNFfKXifwP8Tf2TdKuvE/gDxHqnxK+%0AHmmobjUfAniac3WoW1qvMjaden94SijIhl3AhSAckV9J+C/GGlfEHwjovibQroXujaxZxX1pOBjf%0AFIoZSR2ODyDyDkUAbVFFFABRRRQAUUUUAFFFFABRRTZJFjRndgiKMlmOAB6mgD56/bc02+0r4Z6H%0A8SdKhkn1L4a67a+Kmgh4e4so90d7CD2DW0sp/wCACvedC1ux8TaJp+saZcpeabqFvHd2txGcrLFI%0AoZHHsVIP4153eftD/BfXpr3w5dfEzwPey3CPa3Gmya/aM0isCrxsnmc5BII968H/AGMvi1pPwn0n%0A4g/B7xh4n021tvhvetJpGrXt/GsV1oM+6W1kEjNhvLXKNgkKNi9qAPq7xx4y0j4e+Dda8Ta/dJZa%0ALpNpJeXc74wsaKWOB3JxgDuSB3ryn9iLw9qPhn9lf4fWmp2v2C5ms5b9LPOfs0NzcS3EMXtsiljX%0AHbbiuJt9L1T9tjxFYarq9lcaT8AtLuEvNO0y8jMU/jCdG3R3M8Z5SxVgGSNhmUgMw27RX1OqhVAA%0AwBwAKAForO1/xHpPhTS5tT1vVLPR9Oh/1l5qFwkEKf7zuQB+Jp+ia7pvibSrfU9H1C11XTbld8F5%0AYzLNDKuSMq6khhkHoe1AF6iiigAooooAKKKKACvlf9uTxFb2dx8MtB8Xz32k/BvV9UuT4z1azSXy%0AxFFDvtbS4eIFo4Z5Th2GMiPBIBNfVFFAHxzefG74Aaxplv4d+Ffwos/jBfogittJ8M+Fo/sEA6KZ%0AruaJYIUz1bcSPSuM8cf8E5X+LvhPVdf1fw14A8I+OZoUXRvDvh7TltNJ04GVGlN1cQxiW7mMQdN+%0A0RoWyqE/NX3zVfUbwadp91dmKWcQRNL5UC7pH2gnao7k4wB60AfNt98Nf2jPDOsab4m034s+FtT2%0A28yap4b1rRjZ6Hbp8pj+ymEmdfLw4LySNkY4A4rynUvG1t8RNcvW8X/HLxR4p123Ijj8K/s/Q3os%0ALNQPm864gWRncnktLLGF5AUVxOg/FjTP2qIYNe8Xab4o+MGt3UjSaf8ACHwtDLb6FoahyIhqly/l%0AxSTcAu0zkKWIEWMV9D+G/wBmrxX8TNLt7X4q3eneF/BEQH2X4W+Ama00xU6hL25QI9z7xoI4sjo1%0AAHyt/wAJDpXxmkux8HPgX48+Jev6fO2nSeNfiXqg1a30xs7ZXtor27e2lmUZKjcmDtLccH7T/Zd8%0AN+LfAPhjT/B83w+t/AvgTRbDybBb7XY9Q1a5uGk3vJKsCGFFYtIx2yH5iMADgezaDoGmeFtHs9I0%0AbT7XStKs4xDbWVlCsUMKDoqIoAUewq/QAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAB%0ARRRQAUUUUAf/2Q==%0A' id='image10' /%3E%3C/g%3E%3C/svg%3E" width="105" >
+			<p  class="fertu">Ferri Shalahuddin</p>
+        </div>
+    </div>
+	
+<!------------------------------------------------------------------------------->
+
+<script src="theme-change.js"></script>
+
+<script>
+var tw = new Date();
+if (tw.getTimezoneOffset() == 0) (a=tw.getTime() + ( 7 *60*60*1000))
+else (a=tw.getTime());
+tw.setTime(a);
+var tahun= tw.getFullYear ();
+var hari= tw.getDay ();
+var bulan= tw.getMonth ();
+var tanggal= tw.getDate ();
+var hariarray=new Array("Minggu,","Senin,","Selasa,","Rabu,","Kamis,","Jum'at,","Sabtu,");
+var bulanarray=new Array("Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","Nopember","Desember");
+document.getElementById("tanggalwaktu").innerHTML = tanggal+" "+bulanarray[bulan]+" "+tahun;
+</script>
+
+<script>
+  const typedTextSpan = document.querySelector(".typed-text");
+  const cursorSpan = document.querySelector(".cursor");
+
+  const textArray = ["Ferri Shallahuddin"];
+  const typingDelay = 200;
+  const erasingDelay = 10;
+  const newTextDelay = 100; // Delay between current and next text
+  let textArrayIndex = 0;
+  let charIndex = 0;
+
+  function type() {
+    if (charIndex < textArray[textArrayIndex].length) {
+      if (!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+      typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+      charIndex++;
+      setTimeout(type, typingDelay);
+    } else {
+      cursorSpan.classList.remove("typing");
+      setTimeout(erase, newTextDelay);
+    }
+  }
+
+  function erase() {
+    if (charIndex > 0) {
+      // add class 'typing' if there's none
+      if (!cursorSpan.classList.contains("typing")) {
+        cursorSpan.classList.add("typing");
+      }
+      typedTextSpan.textContent = textArray[textArrayIndex].substring(0, 0);
+      charIndex--;
+      setTimeout(erase, erasingDelay);
+    } else {
+      cursorSpan.classList.remove("typing");
+      textArrayIndex++;
+      if (textArrayIndex >= textArray.length) textArrayIndex = 0;
+      setTimeout(type, typingDelay);
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", function () { // On DOM Load initiate the effect
+    if (textArray.length) setTimeout(type, newTextDelay + 250);
+  });
+</script>
+
+
+</body>
+</html>
+
+
