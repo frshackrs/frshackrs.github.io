@@ -190,8 +190,7 @@ th, td {
 document.cookie = "letsChat= 1;"
 /*document.cookie = "key=tuy;domain=https://ferri-shallahuddin.000webhostapp.com/"*/
 
-var bifrostCors = new bifrostCors("https://ferri-shallahuddin.000webhostapp.com/",true)
-bifrostCors.setLocalStorage({key: "user", value: "user-1"}) 
+
 	
 	/*
 if (localStorage.getItem('theme') == "dark"){
@@ -386,6 +385,17 @@ elmnt.style.display = "none"; */
 <!------------------------------------------------------------------------------->
 
 <script src="theme-change.js"></script>
+	
+<script>
+	window.addEventListener("load", function () {
+        const iframe = document.querySelector("myFrame")
+        const wind = iframe.contentWindow
+        const data = {
+            name: "Kontol"
+        }
+        wind.postMessage(JSON.stringify(data), "*")
+    })
+	</script>
 
 <script>
 var tw = new Date();
