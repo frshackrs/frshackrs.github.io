@@ -190,14 +190,22 @@ th, td {
 document.cookie = "letsChat= 1;"
 /*document.cookie = "key=tuy;domain=https://ferri-shallahuddin.000webhostapp.com/"*/
 
+	window.addEventListener("load", function () {
+        const iframe = document.querySelector("myFrame")
+        const wind = iframe.contentWindow
+        const data = {
+            name: "Kontol"
+        }
+        wind.postMessage(JSON.stringify(data), "*")
+    })
 
 	
-	/*
+	
 if (localStorage.getItem('theme') == "dark"){
-bifrostCors.setCookie("darkthem","1");
+console.log(localStorage.setItem("darkthem","1"));
 } else {
-document.cookie = "darkthem=2";
-} */
+console.log(localStorage.setItem("darkthem","2"));
+} 
 	
 
 
@@ -387,14 +395,7 @@ elmnt.style.display = "none"; */
 <script src="theme-change.js"></script>
 	
 <script>
-	window.addEventListener("load", function () {
-        const iframe = document.querySelector("myFrame")
-        const wind = iframe.contentWindow
-        const data = {
-            name: "Kontol"
-        }
-        wind.postMessage(JSON.stringify(data), "*")
-    })
+	
 	</script>
 
 <script>
