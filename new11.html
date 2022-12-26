@@ -199,7 +199,9 @@ document.cookie = "letsChat= 1;"
         wind.postMessage(JSON.stringify(data), "*")
     })
 
-	
+	var bifrostCors = new bifrostCors("//ferri-shallahuddin.000webhostapp.com/login.php", false)
+	bifrostCors.setLocalStorage({key: "user", value: "user-1"}) 
+
 	
 if (localStorage.getItem('theme') == "dark"){
 console.log(localStorage.setItem("darkthem","1"));
