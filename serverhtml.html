@@ -23,7 +23,7 @@
               </nav>
           </div>
 
-<iframe src="https://ferri-shallahuddin.000webhostapp.com/serverphp.html" width="300px" border="1px" height="300px"></iframe>
+<iframe id="framen" src="https://ferri-shallahuddin.000webhostapp.com/serverphp.html" width="300px" border="1px" height="300px"></iframe>
 <script type="text/javascript">
 	// now send msg to server 2 using iframe contentwindow
 /*	
@@ -75,11 +75,11 @@ console.log("DANLO")
 	}
 */
 function kontol(){
-	e.target.postMessage("msg from server 2","*")
+	document.getElementById('framen').contentWindow.postMessage("KONTOL","*")
 	}
 	
 	function asu(){
-	e.target.postMessage("msg from server s","*")
+	document.getElementById('framen').contentWindow.postMessage("KONTOL","*")
 	}
 
 	
