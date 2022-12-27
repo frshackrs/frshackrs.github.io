@@ -26,47 +26,54 @@
 <iframe src="https://ferri-shallahuddin.000webhostapp.com/serverphp.html" width="300px" border="1px" height="300px"></iframe>
 <script type="text/javascript">
 	// now send msg to server 2 using iframe contentwindow
-    window.addEventListener("load",function(){
- let server_name = localStorage.getItem("name")
-	let frame  = document.getElementsByTagName('iframe')[0];
-	frame.contentWindow.postMessage("Msg from server 1 localStorage data is "+server_name,"*");
-	window.addEventListener("message",kontol)
-	    window.addEventListener("message",asu)
-    })
-
-
-// add receiver in server1
-
-
-// so finally we are able to share msg b/w teo cross origin servers now lets share localstorage data instead of messages
-	function server1Receiver(e)
-	{
-		// e.data contain "localstorage data sent from server2" so we are able to access server2 localstorage here
-if(localStorage.getItem("theme")=="dark") {
-	console.log("KONTOL",e.data,e.origin)
+	
+window.addEventListener('storage',(e)=>{
+if(e.key == "ASU") {
+console.log("JANCOK")
 } else {
-	console.log("ASU",e.data,e.origin)
+console.log("DANLO")
 }
-   
-		
-		// if(e.origin == "http://localhost:8000")
-		// {
-		console.log(e.origin,e.data)
+
+
+})
+
+	
+   window.addEventListener("load",function(){
+
+		window.addEventListener("message",server2Receiver)
+
+	})
+
+
+
+	function server2Receiver(e)
+
+	{
+
+	    let server_name = localStorage.getItem("name")
+
+		console.log("inside server2Receiver",e)
+
+		if(e.origin == "https://ferri-shallahuddin.000webhostapp.com/serverphp.html")
+
+		{
+
+		console.log("inside if of server2 ",e.origin,e.data)
+
+
 
 		// lets send back a msg to server1
 
-		// e.target.postMessage("msg from server 2","*")
 
-		// }
+
+		e.source.postMessage("localstorage data sent from "+server_name,e.origin)
+
+
+
+		}
+
 	}
-	
-	function kontol(){
-	localStorage.setItem("DD","KONTOL")
-	}
-	
-	function asu(){
-	localStorage.setItem("DD","ASU")
-	}
+
 
 </script>
 	
