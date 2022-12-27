@@ -25,6 +25,10 @@
 
 <iframe id="framen" src="https://ferri-shallahuddin.000webhostapp.com/serverphp.html" width="300px" border="1px" height="300px"></iframe>
 <script type="text/javascript">
+	
+	let frame  = document.getElementsByTagName('iframe')[0];
+	
+	
 	// now send msg to server 2 using iframe contentwindow
 /*	
 window.addEventListener('storage',(e)=>{
@@ -75,11 +79,12 @@ console.log("DANLO")
 	}
 */
 function kontol(){
-	document.getElementById('framen').contentWindow.postMessage("KONTOL","*")
+	//document.getElementById('framen').contentWindow.postMessage("KONTOL","*")
+	frame.contentWindow.postMessage("Msg from server 1 localStorage data is "+server_name,"*");
 	}
 	
 	function asu(){
-	document.getElementById('framen').contentWindow.postMessage("KONTOL","*")
+	frame.contentWindow.postMessage("Msg from server 1 localStorage data is "+server_name,"*");
 	}
 
 	
