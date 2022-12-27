@@ -26,7 +26,7 @@
 <iframe src="https://ferri-shallahuddin.000webhostapp.com/serverphp.html" width="300px" border="1px" height="300px"></iframe>
 <script type="text/javascript">
 	// now send msg to server 2 using iframe contentwindow
-	
+/*	
 window.addEventListener('storage',(e)=>{
 if(e.key == "ASU") {
 console.log("JANCOK")
@@ -73,13 +73,13 @@ console.log("DANLO")
 		}
 
 	}
-
+*/
 function kontol(){
-	localStorage.setItem("DD","KONTOL")
+	top.postMessage('Kontol', 'A');
 	}
 	
 	function asu(){
-	localStorage.setItem("DD","ASU")
+	top.postMessage('Asu', 'A');
 	}
 
 	
