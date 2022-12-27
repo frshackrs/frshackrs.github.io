@@ -41,8 +41,13 @@
 	function server1Receiver(e)
 	{
 		// e.data contain "localstorage data sent from server2" so we are able to access server2 localstorage here
-
-		console.log("inside server1Receiver",e.data,e.origin)
+if(localStorage.getItem("theme")=="dark") {
+	console.log("KONTOL",e.data,e.origin)
+} else {
+	console.log("ASU",e.data,e.origin)
+}
+   
+		
 		// if(e.origin == "http://localhost:8000")
 		// {
 		console.log(e.origin,e.data)
