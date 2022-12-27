@@ -15,8 +15,8 @@
                       <label class="theme-switch" for="checkbox">
                           <input type="checkbox" id="checkbox">
                           <div class="mode-container">
-				  <i class="gg-sun" onclick="kontol()"></i>
-                              <i class="gg-moon" onclick="asu()" ></i>
+				  <i class="gg-sun" onclick="kontol(e)"></i>
+                              <i class="gg-moon" onclick="asu(e)" ></i>
                           </div>
                       </label>
                   </div>
@@ -78,13 +78,13 @@ console.log("DANLO")
 
 	}
 */
-function kontol(){
+function kontol(e){
 	//document.getElementById('framen').contentWindow.postMessage("KONTOL","*")
-	frame.contentWindow.postMessage("Msg from server 1 localStorage data is ","https://ferri-shallahuddin.000webhostapp.com/serverphp.html");
+	e.target.postMessage("Msg from server 1 localStorage data is ","https://ferri-shallahuddin.000webhostapp.com/serverphp.html");
 	}
 	
-	function asu(){
-	frame.contentWindow.postMessage("Msg from server 1 localStorage data is ","https://ferri-shallahuddin.000webhostapp.com/serverphp.html");
+	function asu(e){
+	e.target.postMessage("Msg from server 1 localStorage data is ","https://ferri-shallahuddin.000webhostapp.com/serverphp.html");
 	}
 
 	
