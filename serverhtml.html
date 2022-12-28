@@ -67,9 +67,20 @@ console.log("DANLO")
 	
    function sendMessage(){
     //let msg={pName : "Bob", pAge: "35"};
-	   var win = document.getElementById("framen").contentWindow;
-    win.postMessage("ddfdd","serverphp.html"); // childwin is the targetWindow
+	   let frame  = document.getElementsByTagName('iframe')[0];
+	frame.contentWindow.postMessage("fdddd","https://ferri-shallahuddin.000webhostapp.com/serverphp.html");
+	 window.addEventListener("message",taik)  
+	   
+	//   var win = document.getElementById("framen").contentWindow;
+   // win.postMessage("ddfdd","https://ferri-shallahuddin.000webhostapp.com/serverphp.html"); // childwin is the targetWindow
 }
+		
+		
+	function taik(e)
+	{
+		console.log("inside server1Receiver",e.data,e.origin)
+		console.log(e.origin,e.data)	
+	}	
 	
 function kontol(e){
 	//document.getElementById('framen').contentWindow.postMessage("KONTOL","*")
