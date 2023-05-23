@@ -1,0 +1,130 @@
+* {
+	padding:0;
+	margin:0;
+}
+
+body {
+	color: black;
+	font: 14px Sans-Serif;
+	padding: 50px;
+	background: #eee;
+}
+
+h1 {
+	text-align: center;
+	padding: 20px 0 12px 0;
+	margin: 0;
+}
+h2 {
+	font-size: 16px;
+	text-align: center;
+	padding: 0 0 12px 0; 
+}
+
+#container {
+	box-shadow: 0 5px 10px -5px rgba(0,0,0,0.5);
+	position: relative;
+	background: white; 
+}
+
+table {
+	background-color: #E6E6E6; /*#e5e5e5 warna Background table  */
+	border-collapse: collapse;
+	width: 80%;
+	margin: 15px 0;
+	align: center;
+	border: 1px solid black;
+}
+
+.filespesial {
+	background-color: #a5a5a4; /*#e5e5e5*/
+	border-collapse: collapse;
+	width: 100%;
+	border: 1px solid black;
+	padding: 8px;
+
+}
+
+
+.file {
+  
+  padding: 10px;
+  padding-left: 44px;
+  box-sizing: border-box;
+  background-position: 10px center;
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  cursor: pointer;
+ 
+}
+
+.kotak {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+th {
+	background-color: #3e93a7; /*#FE4902  warna Header */
+	color: #FFF;
+	cursor: pointer;
+	padding: 10px 10px;
+}
+
+
+
+th small {
+	font-size: 9px; 
+}
+
+td, th {
+	text-align: left;
+	
+}
+
+a {
+	text-decoration: none;
+}
+
+td a {
+	color: #B3B1B4;
+	display: block;
+	padding: 5px 10px;
+}
+th a {
+	padding-left: 0
+}
+
+
+th:first-of-type {
+	padding-left: 35px;
+}
+
+/*
+tr:nth-of-type(odd) {
+	background-color: #E6E6E6;
+} */
+
+.tr:hover td {
+	background-color:#CACACA;
+}
+
+.tr:hover td a {
+	color: #CACACA;
+}
+
+
+.fsp:hover td {
+background-color: white;	
+}
+
+.fsp:hover td a {
+	color: white;
+}
+
+
+
+
+/* icons for file types (icons by famfamfam) */
+
